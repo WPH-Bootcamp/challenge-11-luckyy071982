@@ -21,7 +21,7 @@ export function MusicPlayer() {
     <div className="w-full max-w-md">
       {/* TODO: Implementasikan music player di sini */}
       <p className="text-center text-gray-500">
-        Mulai implementasi music player di sini
+        Mulai implementasi music player di sini - Siap
       </p>
     </div>
   );
