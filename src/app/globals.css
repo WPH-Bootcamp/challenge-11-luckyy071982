@@ -3,7 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  
+
   /* Design System Colors - Tambahkan warna sesuai kebutuhan dari Figma */
   /* Contoh struktur warna yang bisa digunakan */
   --color-purple-500: #a855f7;
@@ -13,6 +13,12 @@
   --color-gray-500: #6b7280;
   --color-gray-600: #4b5563;
   --color-gray-900: #111827;
+
+  /* Tambahan based on figma */
+  --color-neutral-950: #0a0d12;
+  --color-primary-100: #a78bfa;
+  --color-primary-200: #8b5cf6;
+  --color-primary-300: #7c3aed;
 }
 
 @theme inline {
@@ -20,7 +26,10 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  
+  --font-poppins: var(--font-poppins);
+  --color-primary-200: var(--color-primary-200);
+  --color-primary-300: var(--color-primary-300);
+
   /* Custom spacing dengan 1px ratio (1:1 bukan 1:4) */
   /* p-1 = 1px, p-4 = 4px, p-16 = 16px */
   /* Spacing sudah dikonfigurasi di tailwind.config.ts */
@@ -36,5 +45,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins), sans-serif;
 }
